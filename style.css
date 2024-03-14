@@ -1,0 +1,100 @@
+body {
+  background-image: url(sfondo.jpg);
+  color: white;
+  font-family: serif;
+  display: grid 75% 25%;
+  display: flex;
+  margin-top: 10%;
+}
+
+#tabella {
+  justify-self: center;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: repeat(10, 76px);
+  text-align: center;
+  font-size: 2rem;
+  justify-content: stretch;
+}
+
+span {
+  padding: 7px;
+  border: solid 1px black;
+  margin: 14px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  transition: all 1s ease;
+  color: black;
+}
+
+span:hover {
+  cursor: pointer;
+}
+.extracted-number {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 6rem;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  display: block;
+}
+
+.reset {
+  align-self: end;
+  font-size: 1.5rem;
+  display: grid;
+  width: 150px;
+  height: 150px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background: skyblue;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.estrai-numero {
+  text-align: center;
+  font-size: 2rem;
+  display: grid;
+  width: 200px;
+  height: 200px;
+  color: indianred;
+  padding: 20px;
+  border-radius: 50%;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.estrai-numero:hover,
+.reset:hover {
+  cursor: pointer;
+}
+
+.estrai-numero:active,
+.reset:active {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
+  transform: scale(0.9);
+}
+
+.found {
+  color: white;
+  background: red;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.8);
+  transform: scale(1.3);
+}
